@@ -1,0 +1,31 @@
+.whatWeDo {
+    background-color: $grey;
+    padding: 6rem 1rem;
+    &__heading {
+        font-size: 2.5rem;
+        text-align: center;
+        @media (min-width: $bp-small) {
+            font-size: 3.5rem;
+        }
+    }
+    &__content {
+        margin-top: 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: center;
+        @media (min-width: $bp-medium) {
+            justify-content: space-between;
+        }
+    }
+    .card {
+        width: 100%;
+        margin: 2.5rem .5rem;
+        @media (min-width: $bp-small) {
+            width: 29%;
+        }
+        @media (min-width: $bp-medium) {
+            width: 32%;
+        }
+    }
+}

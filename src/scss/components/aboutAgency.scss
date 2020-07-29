@@ -1,0 +1,53 @@
+.aboutAgency {
+    padding: 6rem 3rem;
+    @media (min-width: $bp-small) {
+        padding: 6rem 1rem;
+    }
+    &__heading {
+        font-size: 2.5rem;
+        text-align: center;
+        @media (min-width: $bp-small) {
+            font-size: 3.5rem;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 2.5rem;
+        @media (min-width: $bp-small) {
+            flex-direction: row;
+        }
+    }
+    &__image {
+        max-height: 200px;
+        @media (min-width: $bp-small) {
+            max-height: 100%;
+            padding-right: 2rem;
+            width: 50%;
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem 0;
+        @media (min-width: $bp-small) {
+            width: 50%;
+            padding: 0;
+        }
+    }
+    &__sub-content {
+        margin-top: 2rem;
+    }
+    &__sub-heading {
+        font-size: 1.5rem;
+        @media (min-width: $bp-small) {
+            font-size: 2rem;
+        }
+    }
+    &__list {
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+}

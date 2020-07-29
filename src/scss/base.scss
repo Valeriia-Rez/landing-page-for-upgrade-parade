@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; //1 rem = 10px;
+}
+
+body {
+    font-family: $font-primary;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $brand-primary;
+    box-sizing: border-box;
+    min-height: 100vh;
+    @media (min-width: $bp-medium) {
+        font-size: 1.5rem;
+    }
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}

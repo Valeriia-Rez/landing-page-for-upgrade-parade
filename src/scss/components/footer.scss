@@ -1,0 +1,35 @@
+.footer {
+    color: $grey;
+    background-color: $brand-primary;
+    padding: 1.35rem 1rem;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media (min-width: $bp-small) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    &__socials {
+        display: flex;
+    }
+    .socials {
+        &__item {
+            font-size: 2rem;
+            margin: 2rem 2rem 0;
+            @media (min-width: $bp-small) {
+                margin: 0 1.8rem;
+            }
+        }
+        &__link {
+            color: inherit;
+            transition: all .3s ease-in-out;
+            &:hover,
+            &:focus {
+                color: $brand-secondary;
+            }
+        }
+    }
+}
